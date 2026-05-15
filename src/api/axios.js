@@ -23,7 +23,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:1009/api",
+  baseURL: "https://salonqueueapi.genesisvirtue.one/api",
   withCredentials: true
 });
 
