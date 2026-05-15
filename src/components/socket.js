@@ -7,7 +7,7 @@ let client = null;
 export const connectSocket = (onMessage, barberId) => {
     if (client && client.active) return client;
 
-    const socket = new SockJS("http://localhost:1009/ws");
+    const socket = new SockJS("https://salonqueueapi.genesisvirtue.one/ws");
 
     client = new Client({
         webSocketFactory: () => socket,
