@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.leaflet-control-geocoder {
+  z-index: 10000 !important;
+}
+
+.leaflet-control-geocoder-form input {
+  width: 260px;
+  padding: 6px;
+}
+
+.leaflet-control-geocoder-alternatives {
+  z-index: 10000 !important;
+}
