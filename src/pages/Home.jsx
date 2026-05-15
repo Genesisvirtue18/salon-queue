@@ -140,7 +140,7 @@ useEffect(() => {
                 rating: "4.5", // Default rating since not in API response
                 lat: salon.latitude,
                 lng: salon.longitude,
-                img: salon.imageUrl ? `ttps://salonqueueapi.genesisvirtue.one${salon.imageUrl}` : DEFAULT_SALON_IMAGE,
+                img: salon.imageUrl ? `https://salonqueueapi.genesisvirtue.one${salon.imageUrl}` : DEFAULT_SALON_IMAGE,
                 type: "Salon", // Default type since not in API response
                 amenities: ["WiFi", "Cards Accepted"], // Default amenities
                 phone: salon.salonPhoneNumber,
