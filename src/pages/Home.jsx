@@ -76,12 +76,19 @@ export default function Home() {
 
     const propertyTypes = ["All", "Hair Salon", "Beauty Salon", "Barbershop", "Spa", "Nail Salon"];
     const amenitiesList = ["Parking", "WiFi", "Cards Accepted", "Wheelchair Access"];
-    const distanceOptions = [
-        { value: "all", label: "All distances" },
-        { value: "0.5", label: "Within 0.5 miles" },
-        { value: "1", label: "Within 1 mile" },
-        { value: "2", label: "Within 2 miles" }
-    ];
+    // const distanceOptions = [
+    //     { value: "all", label: "All distances" },
+    //     { value: "0.5", label: "Within 0.5 miles" },
+    //     { value: "1", label: "Within 1 mile" },
+    //     { value: "2", label: "Within 2 miles" }
+    // ];
+       const distanceOptions = [
+    { value: "all", label: "All distances" },
+    { value: "0.5", label: "Within 0.5 miles" },
+    { value: "1", label: "Within 1 mile" },
+    { value: "2", label: "Within 2 miles" },
+    { value: "5", label: "Within 5 miles" }
+];
     const { register, resendOtp, verify, salonLogin, barberLogin, login, loading } = useAuth();
 
     // Show toast message
@@ -180,7 +187,7 @@ useEffect(() => {
                     setMapCenter([userLoc.lat, userLoc.lng]);
                     setIsLocating(false);
                     // Automatically filter to salons within 2 miles
-                    setDistanceFilter("2");
+                    setDistanceFilter("5");
                     showToastMessage(`📍 Showing salons within 2 miles of your location`, "success");
                 },
                 (error) => {
