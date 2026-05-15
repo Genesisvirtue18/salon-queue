@@ -44,7 +44,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
 
 
 export default function SalonDashboard() {
-    const BASE_URL = "http://localhost:1009";
+    const BASE_URL = "https://salonqueueapi.genesisvirtue.one";
 
     const [isLocating, setIsLocating] = useState(false);
     const { slug } = useParams();
